@@ -11,8 +11,8 @@
 #sudo docker push sydneyinformaticshub/spaceranger:centos7
 
 #To build a singularity container
-#export SINGLUARITY_CACHEDIR=`pwd`
-#export SINGLUARITY_TMPDIR=`pwd`
+#export SINGULARITY_CACHEDIR=`pwd`
+#export SINGULARITY_TMPDIR=`pwd`
 #singularity build spaceranger.img docker://sydneyinformaticshub/spaceranger:centos7
 
 #To run the singularity image (noting singularity mounts the current folder by default)
