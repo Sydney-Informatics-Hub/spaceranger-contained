@@ -16,7 +16,7 @@
 #singularity build spaceranger.img docker://sydneyinformaticshub/spaceranger:centos7
 
 #To run the singularity image (noting singularity mounts the current folder by default)
-#singularity run --bind /project:/project spaceranger.img /bin/bash -c "cd "$PBS_O_WORKDIR" && spaceranger testrun --id=tiny"
+#singularity run --bind /project:/project spaceranger.img /bin/bash -c "cd "$PBS_O_WORKDIR" && export TENX_IGNORE_DEPRECATED_OS=1; spaceranger testrun --id=tiny"
 
 # Pull base image.
 FROM centos:centos7
